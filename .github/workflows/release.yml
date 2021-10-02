@@ -69,7 +69,7 @@ jobs:
     - name: Build Solution
       working-directory: src/WebApplication1/WebApplication1/
       run: |
-        msbuild.exe WebApplication1.csproj /p:DeployOnBuild=true /p:PublishProfile=.\Properties\PublishProfiles\FolderProfile.pubxml
+        msbuild.exe WebApplication1.csproj /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
 
     - name: Packaging 
       shell: pwsh
