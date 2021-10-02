@@ -63,7 +63,7 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.5
     
     - name: Restore Packages
-      working-directory: src/WebApplication1/WebApplication1/
+      working-directory: src/WebApplication1/
       run: nuget restore WebApplication1.sln
 
     - name: Build Solution
